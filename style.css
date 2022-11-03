@@ -10,7 +10,9 @@
 }
 body{
   background-color: var(--body-bg);
-  margin: 20vh auto;
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 .container{
@@ -73,7 +75,8 @@ body{
 
 .card__img{
   width: 100%;
-  mix-blend-mode:color-dodge;
+  mix-blend-mode:overlay;
+  
 }
 
 
