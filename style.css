@@ -75,8 +75,8 @@ body{
 
 .card__img{
   width: 100%;
-  mix-blend-mode:overlay;
-  
+  mix-blend-mode:color-dodge;
+  opacity: 0.9;
 }
 
 
