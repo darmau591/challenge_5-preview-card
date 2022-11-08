@@ -73,12 +73,15 @@ body{
   margin: 3rem 0 0;
 }
 
-.card__img{
+.overlay-color{
+  background-color: var(--accent-color);
   width: 100%;
-  mix-blend-mode:color-dodge;
-  opacity: 0.9;
+  border-radius: 0 15px 15px 0;
 }
 
+.card__img{
+  mix-blend-mode:multiply;
+}
 
 .container__img{
   border-radius: 0 15px 15px 0;
@@ -86,16 +89,15 @@ body{
   height: 100%;
   object-fit: cover;
   object-position: left center;
-
 }
-
 
 @media screen and (max-width:450px) {
   .card{
     flex-direction: column-reverse;
   }
-  .container__img{
+  .container__img, .overlay-color{
     border-radius: 15px 15px 0 0;
+    height: 30vh;
   }
 }
 
